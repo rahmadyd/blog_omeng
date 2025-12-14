@@ -1,0 +1,124 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-nav {
+    background-color: var(--color-primary-black);
+    padding: 16px;
+    margin-bottom: 0;
+}
+
+.main-nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-brand {
+    margin-right: 32px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link a {
+    color: var(--color-primary-pink);
+    display: inline-block;
+    padding: 0;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link a:hover {
+    color: white;
+}
+
+
+
+
+.hero-section {
+    display: flex;
+    min-height: 89vh;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+.hero-section .hero-content {
+    width: 50%;
+    background-color: var(--color-primary-black);
+    color: var(--color-text-light);
+    padding: 120px 80px 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    max-width: none;
+}
+
+.hero-section .hero-content h1 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-m);
+}
+
+.hero-visual {
+    width: 50%; 
+    background-color: var(--color-primary-pink); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+@keyframes spin {
+    from {transform: translate(-50%, -50%) rotate(0deg); } 
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.hero-visual .rotating-text {
+    position: absolute;
+    top: 50%; left: 50%;
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 2;
+}
+
+.hero-visual .cat-logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 3;
+
+    animation-name: flip-cat;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.hero-cta {
+    max-width: 247px;
+    margin-top: var(--spacing-l);
+}
+
+@keyframes flip-cat {
+    0% {transform:  translate(-50%, -50%) scaleX(1);}
+    0% {transform:  translate(-50%, -50%) scaleX(1);}
+    50% {transform: translate(-50%, -50%) scaleX(-1);}
+    50% {transform: translate(-50%, -50%) scaleX(-1);}
+}
