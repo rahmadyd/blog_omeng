@@ -1,110 +1,157 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/logo-omeng.png" type="image/png">
-        <title>Omeng's Site</title>
-        <meta name="description" content="Blog and Sharing">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omeng's Site</title>
 
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="images/logo-omeng.png" type="image/png">
+  <link rel="stylesheet" href="css/main.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-        
-        <script src="main.js" defer></script>
-    </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <body>
-        <header>
-            </header>
+  <script src="js/main.js" defer></script>
+</head>
 
-        <nav class="main-nav">
-            <div class="container main-nav-content">
+<body>
 
-                <a href="index.html" class="nav-brand">
-                    <img src="images/logo-navbar.png" class="nav-logo">
-                    <span class="sr-only"></span>
-                </a>
+<header>
+  <nav class="main-nav">
 
-                <form class="search-bar">
-                    <div class="search-wrapper">
-                        <input type="text" placeholder="Cari.." class="search-input">
-                    </div>
-                </form>
+    <div class="container main-nav-content">
 
-                <div class="nav-link">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="myproject.html">My Project</a>
-                    <a href="feedback.htm">Feedback</a>
-                </div>
+      <div class="nav-left">
+        <button class="nav-toggle" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
 
-            </div>
+        <nav class="nav-secondary">
+          <div class="container">
+            <a href="#settings">Settings</a>
+            <a href="#theme">Theme</a>
+          </div>
         </nav>
 
-        <main>
-            <section class="hero-section">
+        <a href="index.html" class="nav-brand">
+          <img src="images/logo-navbar.png" class="nav-logo">
+        </a>
+      </div>
 
-                <div class="hero-content">
-                    <h1>WELCOME to <br>OMENG Creations</h1>
-                    <p>Ruang digital untuk merayakan seni kontras. Ikuti perjalanan kami dalam mengeksplorasi karya visual, inspirasi, dan cerita di balik setiap kreasi.</p>
-                    <a href="#" class="btn btn-primary hero-cta">Let see the Journey!</a>
-                </div>
+      <form class="search-bar">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Cari.." class="search-input">
+        </div>
+      </form>
 
-                <div class="hero-visual">
-                    <img src="images/logo-circle.png" alt="Tulisan lingkaran" class="rotating-text">
-                    <img src="images/logo-omeng.png" alt="Kucing" class="cat-logo">
-                </div>
+      <div class="nav-right">
+        <div class="nav-link">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="shop.html">Shop</a>
+          <a href="myproject.html">My Project</a>
+        </div>
+      </div>
+    </div>
 
-            </section>
+    <div class="progess-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
 
-            <section class="project-section section-padding">
-                <div class="container">
-                    <h2>Let see My Project</h2>
-                    <div class="card-list-project-container">
+  </nav>
+</header>
 
-                        <div class="project-card">
-                            <div class="category-tags">
-                                <span class="badge">UI Design</span>
-                            </div>
-                            <h3>Pan Pan Destination</h3>
-                            <p>UI Aplikasi Pariwisata Kota Bengkulu</p>
-                            <a href="panpan.html" class="btn btn-primary">More</a>
-                        </div>
+<main>
 
-                    </div>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>WELCOME to <br>OMENG Creations</h1>
+      <p>
+        Ruang digital untuk merayakan seni kontras.
+        Ikuti perjalanan kami dalam mengeksplorasi karya visual.
+      </p>
+      <a href="#" class="btn btn-primary hero-cta">Let see the Journey!</a>
+    </div>
 
-                </div>
-            </section>
+    <div class="hero-visual">
+      <img src="images/logo-circle.png" class="rotating-text">
+      <img src="images/logo-omeng.png" class="cat-logo">
+    </div>
+  </section>
 
-            <section class="shop-section section-padding">
-                <div class="container">
-                    <h2>Kuy beli daganganya</h2>
-                    <div class="card-list-shop-container">
+  <!-- MARQUEE -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>OMENG</span><span>OMENG</span><span>OMENG</span>
+      <span>OMENG</span><span>OMENG</span><span>OMENG</span>
+      <span>OMENG</span><span>OMENG</span><span>OMENG</span>
+    </div>
+  </div>
 
-                        <div class="shop-card">
-                            <div class="category-tags">
-                                <span class="badge">Stiker</span>
-                            </div>
-                            <h3>Stiker lucu</h3>
-                            <p>miaw miaw</p>
-                            <a href="shop.html" class="btn btn-primary">More</a>
-                        </div>
+  <!-- PROJECT -->
+  <section class="project-section">
+    <div class="project-container">
 
-                    </div>
+      <div class="project-header">
+        <div class="title-area">
+          <h2>Let see My Project</h2>
+        </div>
 
-                </div>
-            </section>
-        </main>
+        <a href="myproject.html" class="more-btn">
+          <span>More</span>
+          <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19"
+                  stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
 
-        <footer>
-            <div class="container">
-                <p>&Copy; 2025 Rahmad. All rights reserved.</p>
+      <div class="project-card-container">
+        <a href="panpan.html" class="project-card">
+
+          <div class="card-image">
+            <img src="images/panpandestionation.png" loading="lazy">
+          </div>
+
+          <div class="card-overlay"></div>
+
+          <div class="card-badges">
+            <span class="badge">UI Design</span>
+            <span class="badge">Mobile</span>
+          </div>
+
+          <div class="card-content">
+            <h3>Pan Pan Destination</h3>
+            <p>UI Aplikasi Pariwisata Kota Bengkulu</p>
+
+            <div class="card-footer">
+              <span class="date">Jan 2024</span>
+              <span class="view-link">
+                View Project
+                <svg width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19"
+                        stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
             </div>
-        </footer>
-    </body>
+          </div>
+
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Rahmad. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
 </html>

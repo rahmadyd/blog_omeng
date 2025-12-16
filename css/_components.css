@@ -1,7 +1,9 @@
+
+/*===bagian search bar===*/
 .search-bar {
     display: flex; 
     flex-grow: 1;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .search-wrapper {
@@ -45,10 +47,10 @@
 }
 
 
-
+/*===bagian button*/
 
 .btn {
-    padding: 12px 25px;
+    padding: 12px 20px;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
@@ -66,3 +68,36 @@
 .btn-primary:hover{
     background-color: #FF1493;
 }
+
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.35);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.more-btn:hover {
+  background: rgba(255, 255, 255, 0.55);
+  transform: translateX(2px);
+}
+
+.more-btn .arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.more-btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+
+
