@@ -1,4 +1,9 @@
 
+footer {
+    padding-top: 40px;
+    border-top: 1px solid var(--color-primary-pink);
+}
+
 /*===bagian search bar===*/
 .search-bar {
     display: flex; 

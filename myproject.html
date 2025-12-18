@@ -14,36 +14,58 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         
-        <script src="main.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
         <header>
-            </header>
+            <nav class="main-nav">
 
-        <nav class="main-nav">
-            <div class="container main-nav-content">
+                <div class="container main-nav-content">
 
-                <a href="index.html" class="nav-brand">
+                <div class="nav-left">
+                    <button class="nav-toggle" aria-expanded="false">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    </button>
+
+                    <nav class="nav-secondary">
+                    <div class="container">
+                        <a href="#settings">Settings</a>
+                        <a href="#theme">Theme</a>
+                    </div>
+                    </nav>
+
+                    <a href="index.html" class="nav-brand">
                     <img src="images/logo-navbar.png" class="nav-logo">
-                    <span class="sr-only"></span>
-                </a>
+                    </a>
+                </div>
 
                 <form class="search-bar">
                     <div class="search-wrapper">
-                        <input type="text" placeholder="Cari.." class="search-input">
+                    <input type="text" placeholder="Cari.." class="search-input">
                     </div>
                 </form>
 
-                <div class="nav-link">
+                <div class="nav-right">
+                    <div class="nav-link">
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
                     <a href="shop.html">Shop</a>
                     <a href="myproject.html">My Project</a>
+                    </div>
+                </div>
                 </div>
 
-            </div>
-        </nav>
+                <div class="progess-container">
+                <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+            </nav>
+        </header>
+
+        
 
         <footer>
             <div class="container">
