@@ -16,6 +16,12 @@
     --spacing-xl: 64px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
