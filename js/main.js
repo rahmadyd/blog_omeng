@@ -1,3 +1,10 @@
+// main.js
+import { addToCart } from './cart.js';
+import { validateForm } from './form.js';
+
+
+
+//interactive object
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav-secondary');
