@@ -441,7 +441,7 @@
 
 /*===shop container*====*/
 .shop-section {
-  background: var(--color-primary-black); 
+  background: var(--color-primary-pink); 
   padding: 48px 56px 64px; 
 }
 
@@ -449,7 +449,7 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  background: #ffd84d;              
+  background: var(--color-primary-black);              
   border-radius: 32px;
   padding: 40px 48px 56px;
 
